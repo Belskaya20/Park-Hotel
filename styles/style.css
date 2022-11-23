@@ -1,0 +1,760 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Обнулили отступы по умолчанию для всех элементов */
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+    /*обертка*/
+}
+
+@media screen and (max-width: 1176px) {
+    .wrapper {
+        padding: 0 50px;
+    }
+}
+
+header {
+    background-color: rgba(32, 83, 80, 0.5);
+    padding: 30px 0 31px;
+}
+
+header nav {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header nav a+a::before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 5px 45px;
+    /* Черточки в меню*/
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 24px 0px 25px;
+    }
+    header nav {
+        font-size: 0.9rem;
+    }
+    header nav a+a::before {
+        width: 25px;
+        margin: 5px 50px;
+        /* Черточки в меню*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 18px 0px 20px;
+    }
+    header nav {
+        font-size: 0.75rem;
+    }
+    header nav a+a::before {
+        width: 20px;
+        /* Черточки в меню*/
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:767px) {
+    header {
+        padding: 15px 0px;
+    }
+    header nav {
+        font-size: 0.75rem;
+        display: block;
+    }
+    header nav a+a::before {
+        height: 1px;
+        width: 15px;
+        display: block;
+        margin: 17px auto;
+        /* Черточки в меню*/
+    }
+}
+
+.image {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 450px 0 25px;
+}
+
+.arrow::after {
+    content: '';
+    background-image: url(../icons/Vector\ 1.png);
+    width: 57px;
+    height: 23px;
+    display: block;
+    margin: 85px auto 0;
+    /*стрелочка на баннере*/
+}
+
+.image p {
+    margin: 30px auto 60px;
+    font-size: 1.25rem;
+    max-width: 495px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    /*ссылки на баннере*/
+}
+
+.booking-link {
+    background-color: #AE5F3D;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    /*ссылка на забронировать*/
+}
+
+h1 {
+    font-size: 3rem;
+    /*Парк-отель*/
+}
+
+@media screen and (max-width: 1024px) {
+    .image {
+        padding: 353px 0 25px;
+    }
+    .arrow::after {
+        height: 22px;
+        margin: 40px auto 0;
+        /*стрелочка на баннере*/
+    }
+    .image p {
+        font-size: 0.9rem;
+        margin: 20px auto 45px;
+        max-width: 356px;
+    }
+    .booking-link {
+        font-size: 0.85rem;
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        /*ссылка на забронировать*/
+    }
+    h1 {
+        font-size: 2.25rem;
+        /*Парк-отель*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        padding: 249px 0 25px;
+    }
+    .arrow::after {
+        margin: 27px auto 0;
+        /*стрелочка на баннере*/
+    }
+    .image p {
+        margin: 20px auto 35px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:767px) {
+    section {
+        padding: 50px 0;
+    }
+}
+
+.aboutUs h2 {
+    margin: 30px 0 37px;
+}
+
+.aboutUs p {
+    max-width: 608px;
+    margin: 0 auto;
+}
+
+.aboutUs img {
+    max-width: 617px;
+    width: 100%;
+    /*картинка О нас*/
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutUs p {
+        font-size: 1.1rem;
+        max-width: 537px;
+    }
+    .aboutUs img {
+        max-width: 553px;
+        /*картинка О нас*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUs p {
+        max-width: 571px;
+    }
+    .aboutUs img {
+        max-width: 486px;
+        /*картинка О нас*/
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:767px) {
+    .aboutUs p {
+        font-size: 1rem;
+    }
+}
+
+.entertainment .text {
+    max-width: 520px;
+    margin: 37px auto 30px;
+    font-size: 1.25rem;
+}
+
+.entertainment article {
+    display: inline-block;
+    width: calc((100% - 2*24px)/3);
+    padding: 30px 5px;
+    background-color: #FFF;
+    border-radius: 1.5rem;
+    max-width: 444px;
+    /*развлечения article*/
+}
+
+article i {
+    color: #AE5F3D;
+    font-size: 7rem;
+    /*Иконки развлечения*/
+}
+
+.entertainment article:not(:last-child) {
+    margin-right: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .entertainment article {
+        width: calc((100% - 2*20px)/3);
+        font-size: 0.8rem;
+        padding: 30px 10px 24px;
+    }
+    .entertainment article:not(:last-child) {
+        margin-right: 20px;
+    }
+    .entertainment .text {
+        max-width: 456px;
+        font-size: 1.1rem;
+    }
+    .entertainment .light:nth-child(3) {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .entertainment article {
+        display: block;
+        width: 100%;
+        font-size: 1.15rem;
+        padding: 30px 18px 27px 19px;
+        margin: 0 auto;
+    }
+    .entertainment article:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+    .entertainment .text {
+        max-width: 520px;
+        margin: 32px auto 35px;
+    }
+    .entertainment .light:nth-child(3) {
+        font-size: 1.15rem;
+    }
+}
+
+.apartments article::before {
+    position: absolute;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.8rem;
+    height: 30px;
+    width: 132px;
+}
+
+.apartments article:nth-child(3)::before {
+    content: "от 7 т.р./сутки";
+    width: 130px;
+    /*цена на отель*/
+}
+
+.apartments article:nth-child(4)::before {
+    content: "от 23 т.р./сутки";
+    /*цена на коттедж*/
+}
+
+.apartments article:nth-child(4)::after {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    background-color: #F24040;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    font-family: 'Source Serif Pro';
+    font-size: 0.7rem;
+    line-height: 50px;
+    top: -25px;
+    left: -25px;
+}
+
+.apartments article:nth-child(5)::before {
+    content: "от 13 т.р./сутки";
+    /*цена на таунхаус*/
+}
+
+.apartments .text {
+    max-width: 617px;
+    margin: 30px auto 55px;
+}
+
+.apartments article {
+    position: relative;
+    display: inline-block;
+    width: calc((100% - 2*48px)/3);
+    text-align: left;
+    font-size: 0.9rem;
+    vertical-align: top;
+    max-width: 698px;
+}
+
+.apartments h3 {
+    margin: 25px 0 15px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    /*Отель Коттедж Таунхаус*/
+}
+
+.apartments article:not(:last-child) {
+    margin-right: 48px;
+}
+
+.apartments article p {
+    color: #474747;
+    /*параграф в apartments*/
+}
+
+.apartments img {
+    max-width: 698px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .apartments article {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .apartments article:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+    .apartments article::before {
+        font-size: 0.9rem;
+        height: 34px;
+        width: 150px;
+    }
+    .apartments article:nth-child(4)::after {
+        width: 60px;
+        height: 60px;
+        font-size: 0.8rem;
+        line-height: 60px;
+        top: -30px;
+        left: -30px;
+    }
+    .apartments .text {
+        margin: 30px auto;
+        font-size: 1.1rem;
+    }
+    .apartments h3 {
+        margin: 15px 0;
+        /*Отель Коттедж Таунхаус*/
+    }
+    .apartments article p {
+        font-size: 1.15rem;
+        /*параграф в apartments*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apartments article:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    .apartments article::before {
+        font-size: 1rem;
+        height: 36px;
+        width: 174px;
+    }
+    .apartments article:nth-child(3)::before {
+        width: 150px;
+        /*цена на таунхаус*/
+    }
+    .apartments article:nth-child(4)::after {
+        font-size: 0.9rem;
+    }
+    .apartments .text {
+        margin: 25px auto 30px;
+    }
+    .apartments h3 {
+        margin: 20px 0;
+        /*Отель Коттедж Таунхаус*/
+    }
+    .apartments article p {
+        font-size: 1.1rem;
+        /*параграф в apartments*/
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    /*О нас Развлечения Наши аппартаменты*/
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 25px 0 20px;
+    /*Баня Рыбалка Спорт*/
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 1.75rem;
+        /*О нас Развлечения Наши аппартаменты*/
+    }
+    h4 {
+        font-size: 1.1rem;
+        margin: 15px 0;
+        /*Баня Рыбалка Спорт*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h4 {
+        font-size: 1.15rem;
+        /*Баня Рыбалка Спорт*/
+    }
+}
+
+.light {
+    font-weight: lighter;
+    font-size: 1rem;
+    /*все параграфы*/
+}
+
+.type {
+    font-size: 1.1rem;
+    font-weight: lighter;
+    margin-bottom: 23px;
+    /*параграф в форме*/
+}
+
+.booking {
+    padding: 100px 0;
+    font-weight: 300;
+    font-size: 1.1rem;
+    /*секция забронировать*/
+}
+
+form {
+    max-width: 1016px;
+    margin: 0 auto;
+    padding: 100px 121px 100px 119px;
+    background-color: #FFF;
+    border: 1px solid #EEE;
+    border-radius: 30px;
+    text-align: left;
+}
+
+form .text {
+    max-width: 572px;
+    margin: 30px auto 50px;
+    text-align: center;
+}
+
+.email {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.name {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 60px;
+    padding-left: 35px;
+}
+
+.name:focus {
+    outline-color: rgb(175, 14, 14);
+}
+
+form div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.radio {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    font-size: 1rem;
+}
+
+.submit {
+    background-color: #AE5F3D;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 30px;
+    line-height: 23px;
+    display: block;
+    width: 404px;
+    height: 60px;
+    margin: 40px auto 0;
+    transition-duration: 2s;
+}
+
+.submit:hover {
+    color: #000;
+}
+
+.background-grey {
+    background-color: #f5f5f5;
+    /*серый цвет секций бронирование и развлечения*/
+}
+
+label {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .type {
+        font-size: 1rem;
+        margin-bottom: 21px;
+        /*параграф в форме*/
+    }
+    form {
+        max-width: 820px;
+        padding: 80px 68px 80px 67px;
+    }
+    form .text {
+        margin: 30px auto;
+    }
+    .name {
+        height: 53px;
+    }
+    .radio {
+        margin-right: 23px;
+    }
+    .submit {
+        font-size: 0.9rem;
+        width: 324px;
+        height: 48px;
+        padding: 14px 34px 13px 39px;
+    }
+    label {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .type {
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        /*параграф в форме*/
+    }
+    form {
+        max-width: 720px;
+        padding: 70px 52px 70px 53px;
+    }
+    form .text {
+        margin: 25px auto;
+    }
+    .name {
+        height: 58px;
+        margin-bottom: 20px;
+    }
+    .radio {
+        margin-right: 21px;
+    }
+    label {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:767px) {
+    .type {
+        font-size: 0.65rem;
+        margin-bottom: 22px;
+        /*параграф в форме*/
+    }
+    form {
+        max-width: 730px;
+        padding: 30px 21px 30px 20px;
+    }
+    form .text {
+        margin: 25px auto;
+        font-size: 0.9rem;
+    }
+    .name {
+        height: 45px;
+        margin-bottom: 20px;
+        font-size: 0.6rem;
+        padding-left: 15px;
+    }
+    .email {
+        font-size: 0.8rem;
+    }
+    .radio {
+        margin-right: 10px;
+    }
+    .submit {
+        font-size: 0.7rem;
+        max-width: 324px;
+        height: 45px;
+        padding: 10px 24px 9px 23px;
+        width: 100%;
+    }
+    label {
+        font-size: 0.8rem;
+    }
+}
+
+footer {
+    padding: 70px 0;
+}
+
+footer nav a {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #000;
+    /*навигация footer*/
+}
+
+footer nav a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+footer nav {
+    width: 150px;
+    margin: 35px auto;
+    padding: 25px 0;
+    border-bottom: 0.7px solid #737373;
+    border-top: 0.7px solid #737373;
+}
+
+.networks a {
+    color: #000;
+    display: inline-block;
+    /*Иконки соц сети*/
+}
+
+.networks a:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.networks i {
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.networks i:hover {
+    transform: scale(1.5);
+}
+
+.topbutton {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: #000;
+    font-size: 2.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 0;
+    }
+    footer nav a {
+        font-size: 0.65rem;
+        /*навигация footer*/
+    }
+    footer nav a:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    footer nav {
+        width: 140px;
+        margin: 25px auto;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer nav a {
+        font-size: 0.75rem;
+        /*навигация footer*/
+    }
+    footer nav a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    footer nav {
+        width: 116px;
+        margin: 20px auto;
+        border-top: 0.5px solid #737373;
+        border-bottom: 0.5px solid #737373;
+    }
+}
